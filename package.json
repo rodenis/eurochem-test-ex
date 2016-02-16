@@ -1,0 +1,19 @@
+{
+  "name": "eurochem-test-ex",
+  "version": "1.0.0",
+  "description": "Test task for EuroChem",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/tape test/**/*.js",
+    "lint": "./node_modules/.bin/eslint */*.js",
+    "precommit": "npm run test && npm run lint",
+    "prepush": "npm run test && npm run lint"
+  },
+  "author": "Denis Rodin",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "husky": "^0.10.2",
+    "tape": "^4.4.0"
+  }
+}
