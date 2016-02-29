@@ -1,28 +1,17 @@
 {
     "rules": {
-        "indent": [
-            2,
-            4
-        ],
-        "quotes": [
-            2,
-            "single"
-        ],
-        "linebreak-style": [
-            2,
-            "unix"
-        ],
-        "semi": [
-            2,
-            "always"
-        ]
+        "indent": [2, 4],
+        "quotes": [2, "single"],
+        "linebreak-style": [2, "unix"],
+        "semi": [2, "always"],
+        "generator-star-spacing": [2, {"before": false, "after": true}]
     },
     "env": {
         "node": true,
         "browser": true
     },
     "ecmaFeatures": {
-        "modules": true
+        "generators": true
     },
     "extends": "eslint:recommended"
 }

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>{{= it.title }}</title>
+    <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+<table id="model-table" class="table">
+    <thead>
+    <tr>
+        {{ for (var i = 0; i < it.header.length; i++) { }}
+        <th class="table__header">{{= it.header[i] }}</th>
+        {{ } }}
+    </tr>
+    </thead>
+    <tbody>
+    {{ for (var i = 0; i < it.data.length; i++) { }}
+    <tr>
+        {{
+            var style = '';
+            for (var j = 0; j < it.header.length; j++) {
+                style = i % 2 === 0 ? '' : ' table__cell_highlight';
+        }}
+        <td class="table__cell{{= style }}" data-id="{{= it.data[i].id}}" data-field="{{= it.header[j] }}">{{= it.data[i][it.header[j]] }}</td>
+        {{ } }}
+    </tr>
+    {{ } }}
+    </tbody>
+</table>
+<div id="save-btn" class="save-btn">Сохранить</div>
+<script type="text/javascript" src="/static/bundle.js"></script>
+</body>
+</html>

@@ -11,6 +11,12 @@ pids
 # Dependency directory
 node_modules
 
-#idea project folder
+# idea project folder
 .idea
+
+# ORM config file
+config/orm.json
+
+# builded client code
+static/bundle.js
 

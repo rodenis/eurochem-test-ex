@@ -1,0 +1,32 @@
+<model>
+    <property name="name" type="STRING"/>
+    <property name="age" type="INTEGER"/>
+    <property name="email" type="STRING"/>
+    <property name="city" type="STRING"/>
+    <data>
+        <row>
+            <name>Anton Petrov</name>
+            <age>26</age>
+            <email>apetrov@gmail.com</email>
+            <city>Moscow</city>
+        </row>
+        <row>
+            <name>Alexander Shtern</name>
+            <age>40</age>
+            <email>shtern_a@gmail.com</email>
+            <city>London</city>
+        </row>
+        <row>
+            <name>Виталий Косыгин</name>
+            <age>34</age>
+            <email>kosigin@gmail.com</email>
+            <city>Москва</city>
+        </row>
+        <row>
+            <name>Генадий Васечкин</name>
+            <age>33</age>
+            <email>g_vasechkin@gmail.com</email>
+            <city>Санкт-Петербург</city>
+        </row>
+    </data>
+</model>

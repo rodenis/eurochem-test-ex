@@ -1,0 +1,75 @@
+.table {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    padding: 0;
+    margin: 20px;
+    border: 0;
+}
+
+.table__header {
+    padding: 2px 5px;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table__header_edit {
+    background-color: #777777;
+}
+
+.table__cell {
+    padding: 2px 5px;
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+.table__cell_modified {
+    background-color: indianred;
+}
+
+.table__cell_highlight {
+    background-color: #e0e0e0;
+}
+
+.table__cell_edit {
+    cursor: text;
+}
+
+.save-btn {
+    background-color: #7f7f7f;
+    cursor: pointer;
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.save-btn_hidden {
+    display: none;
+}
+
+.auto-complete {
+    position: absolute;
+    background-color: white;
+}
+
+.auto-complete__item {
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    min-width: 100px;
+}
+
+.auto-complete_hidden {
+    display: none;
+}
